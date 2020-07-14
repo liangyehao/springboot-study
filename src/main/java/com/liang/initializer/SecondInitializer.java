@@ -4,8 +4,8 @@ import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.annotation.Order;
 
-@Order(1)
-public class FirstInitializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {
+@Order(2)
+public class SecondInitializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {
     /**
      * Initialize the given application context.
      *
@@ -13,6 +13,6 @@ public class FirstInitializer implements ApplicationContextInitializer<Configura
      */
     @Override
     public void initialize(ConfigurableApplicationContext applicationContext) {
-        System.out.println("------FirstInitializer 自定义初始化器 1------");
+        System.out.println("------SecondInitializer 自定义初始化器 2 ------");
     }
 }
