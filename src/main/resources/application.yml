@@ -1,3 +1,6 @@
+server:
+  port: 8089
+
 context:
   initializer:
     classes: com.liang.initializer.ThirdInitializer
