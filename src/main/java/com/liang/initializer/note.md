@@ -25,3 +25,10 @@ springApplication.run(args);
 ```
 
 ### （3）yml文件配置实现
+#### 1.实现org.springframework.context.ApplicationContextInitializer接口
+#### 2.application.yml中配置initializer(会优先执行，Order不起作用)
+```yaml
+context:
+  initializer:
+    classes: com.liang.initializer.ThirdInitializer
+```
