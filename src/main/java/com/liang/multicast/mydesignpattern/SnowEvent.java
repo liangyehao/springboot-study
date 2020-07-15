@@ -1,9 +1,8 @@
-package com.liang.multicast.designpattern;
+package com.liang.multicast.mydesignpattern;
 
 public class SnowEvent extends WeatherEvent {
-
     @Override
-    String getWeather() {
+    public String getWeather() {
         return "snow";
     }
 }
