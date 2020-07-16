@@ -1,5 +1,8 @@
 package com.liang.multicast.mydesignpattern;
 
+/**
+ * @author liangyehao
+ */
 public interface EventMulticaster {
 
     void multicastEvent(Event event);
